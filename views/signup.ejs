@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+        .my-login{
+    box-shadow: rgb(0 0 0 / 25%) 0px 54px 55px, rgb(0 0 0 / 12%) 0px -12px 30px, rgb(0 0 0 / 12%) 0px 4px 6px, rgb(0 0 0 / 17%) 0px 12px 13px, rgb(0 0 0 / 9%) 0px -3px 5px;;
+
+        }
+    </style>
+</head>
+<body>
+    <h3 class="text-center">Please Sign</h3>
+    <form action="regester" method="post">
+        
+        <div class="container col-sm-8 col-md-6  col-lg-3 mt-5 my-login">
+            <div class="mb-3 col-11">
+              <h3>Registeration</h3>
+              <label for="user-name" class="form-label">name</label>
+              <input type="text" class="form-control" id="user-name" name="userName" placeholder="your E-mail">
+            </div>
+            <div class="mb-3 col-11">
+                <label for="email-form" class="form-label">email</label>
+                <input type="text" class="form-control" id="email-form" name="email" placeholder="your E-mail">
+              </div>
+            <div class="mb-3 col-11">
+              <label for="user-pass" class="form-label">password</label>
+              <input type="password" class="form-control" id="user-pass" name="password" placeholder="your Password">
+            </div>
+            <div class="mb-3 col-11 form-check">
+              <label class="form-check-label" for="rememberMe">remember me</label>
+              <input type="checkbox" class="form-check-input" id="rememberMe">
+            </div>
+            <div id="type-loading" class="align-items-center"></div>
+            <div id="loading" class="align-items-center"></div>
+            <button type="submit" class="btn btn-primary m-1" id="enter-btn">Register!</button>
+            <div class="">
+              <label for="sign-btn" class="d-block">back to login</label>
+              <button onclick="location.href='/user'"  type="button" class="btn btn-warning mb-2">back</button>
+            </div>
+      </div> 
+ 
+    </form>
+
+</body>
+</html>
