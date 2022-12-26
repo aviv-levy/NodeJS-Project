@@ -28,8 +28,10 @@ async function main() {
   main();
 
   const SignUpRoute = require("./Schemes/signup");
+  const panelRoute = require ("./Schemes/panel")
 
   app.use("/signup", SignUpRoute);
+  app.use("/panel", panelRoute)
   
 app.listen(port,()=>{
     console.log('Server is running...');

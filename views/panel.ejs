@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Panel</title>
+</head>
+<body>
+  <div class="w-75 m-auto mt-5">
+    <button id="add-prod" class="btn btn-success m-3"data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">add students</button>
+    <button id="show-prod" class="btn btn-primary m-3">add forms</button>
+    <button id="show-users" class="btn btn-primary m-3">show all forms</button>
+    <button id="user-prods" class="btn btn-info m-3" data-bs-toggle="modal" data-bs-target="#exampleModal2">Add classes</button>
+  </div>
+
+
+  <!--Add Student Modal  -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="my-form">
+            <div class="mb-3">
+              <label for="student_name" class="col-form-label">Student name:</label>
+              <input type="text" name="student_name" class="form-control" id="student_name">
+            </div>
+            <div class="mb-3">
+              <label for="student_lastname" class="col-form-label">Student last name:</label>
+              <input type="text" name="student_lastname" class="form-control" id="student_lastname">
+            </div>
+            <div class="mb-3">
+              <label for="age" class="col-form-label">Age:</label>
+              <input type="number" name="age" class="form-control" id="age">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Class room:</label>
+              <select name="classroom">
+                <option value="א">א</option>
+                <option value="ב">ב</option>
+                <option value="ג">ג</option>
+                <option value="ד">ד</option>
+                <option value="ה">ה</option>
+                <option value="ו">ו</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="addStudent()">Add student</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!--End of Student Modal  -->
+
+
+
+    <!--Add Classes Modal  -->
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="my-form2">
+            <div class="mb-3">
+              <label for="class_name" class="col-form-label">Class name:</label>
+              <input type="text" name="class_name" class="form-control" id="class_name">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="addClass()">Add Class</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--End of Classes Modal  -->
+
+  <script src="../JS/panel.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
